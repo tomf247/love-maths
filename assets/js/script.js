@@ -15,11 +15,11 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    documentGetElementById("answer-box").addEventListener("keydown", function(event) {
+    document.getElementById("answer-box").addEventListener("keydown", function(event) {
         if (event.key === "Enter") {
             checkAnswer();
         }
-    })
+    });
 
     runGame("addition");
 
